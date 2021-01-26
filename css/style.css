@@ -116,13 +116,13 @@ h3 {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: var(--tittle-text-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: 250ms var(--timing-function);
 }
 
 .site-nav .link:hover,
@@ -179,7 +179,6 @@ h3 {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -188,6 +187,7 @@ h3 {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
+  transition: 250ms var(--timing-function);
 }
 
 .site-contact .contact-link:hover,
@@ -271,7 +271,7 @@ h3 {
 
 .item-decoration {
   width: 270px;
-  height: auto;
+  height: 120px;
   background: var(--background-white-color);
   border-radius: 4px;
   display: flex;
@@ -295,7 +295,6 @@ h3 {
 }
 
 .make {
-  /* background: var(--background-task-color); */
   padding-bottom: 94px;
 }
 
@@ -311,6 +310,33 @@ h3 {
 
 .list .make-item + .make-item {
   margin-left: 30px;
+}
+
+.item-image {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.image-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-text > p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
 }
 
 /* team */
@@ -389,6 +415,7 @@ h3 {
   border: none;
   border-radius: 50%;
   color: var(--border-line-color);
+  transition: 250ms var(--timing-function);
 }
 
 .actions > .view-svg:not(:last-child) {
@@ -447,6 +474,7 @@ h3 {
   box-sizing: border-box;
   border-radius: 4px;
   color: var(--border-line-color);
+  transition: 250ms var(--timing-function);
 }
 
 .client-link:hover,
@@ -663,8 +691,10 @@ h3 {
 }
 
 .reference-text {
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 16px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
@@ -686,6 +716,7 @@ h3 {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   color: var(--primary-white-color);
+  transition: 250ms var(--timing-function);
 }
 
 .footer-icons {
